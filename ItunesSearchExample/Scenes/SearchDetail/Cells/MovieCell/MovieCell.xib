@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="123" id="KGk-i7-Jjw" customClass="MovieCell" customModule="ItunesSearchExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="123"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="123"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vlc-cJ-Ilv">
+                        <rect key="frame" x="16" y="11" width="60" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="Aug-fq-NL0"/>
+                            <constraint firstAttribute="height" constant="90" id="IrZ-cb-tBp"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="sBb-FN-K0Y">
+                        <rect key="frame" x="88" y="15" width="79.5" height="35.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Wick 2" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlt-Kk-rWl">
+                                <rect key="frame" x="0.0" y="0.0" width="79.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHb-uL-Y0U">
+                                <rect key="frame" x="0.0" y="21" width="21" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="aqr-Gm-Dey">
+                        <rect key="frame" x="269" y="61" width="90" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14,99 TL BUY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2XY-1N-R55">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4,99 TL RENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEx-5V-YxM">
+                                <rect key="frame" x="0.0" y="23" width="90" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sBb-FN-K0Y" secondAttribute="trailing" constant="8" id="J7u-ND-Qdr"/>
+                    <constraint firstItem="Vlc-cJ-Ilv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="OR7-N9-ECj"/>
+                    <constraint firstAttribute="trailing" secondItem="aqr-Gm-Dey" secondAttribute="trailing" constant="16" id="PCc-Tg-PiF"/>
+                    <constraint firstItem="Vlc-cJ-Ilv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="f7m-9O-ptG"/>
+                    <constraint firstItem="sBb-FN-K0Y" firstAttribute="top" secondItem="Vlc-cJ-Ilv" secondAttribute="top" constant="4" id="hFk-o2-y9b"/>
+                    <constraint firstItem="sBb-FN-K0Y" firstAttribute="leading" secondItem="Vlc-cJ-Ilv" secondAttribute="trailing" constant="12" id="qZX-UN-gi7"/>
+                    <constraint firstItem="aqr-Gm-Dey" firstAttribute="bottom" secondItem="Vlc-cJ-Ilv" secondAttribute="bottom" id="uBv-hK-cda"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="advisoryRatingLabel" destination="eHb-uL-Y0U" id="DWl-vN-zPT"/>
+                <outlet property="collectionPriceLabel" destination="2XY-1N-R55" id="dVi-uM-9nX"/>
+                <outlet property="movieImageView" destination="Vlc-cJ-Ilv" id="XYq-g4-sce"/>
+                <outlet property="rentalPriceLabel" destination="cEx-5V-YxM" id="6gl-Bd-xT8"/>
+                <outlet property="titleLabel" destination="jlt-Kk-rWl" id="HVD-SU-wjc"/>
+            </connections>
+            <point key="canvasLocation" x="-100" y="99.400299850074973"/>
+        </tableViewCell>
+    </objects>
+</document>
